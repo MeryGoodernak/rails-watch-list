@@ -1,2 +1,8 @@
-<h1>Lists#index</h1>
-<p>Find me in app/views/lists/index.html.erb</p>
+<div class="container">
+<h1>All list is here:</h1>
+  <% @lists.each do |list| %>
+    <div>
+      <%= link_to list.name, list_path(list) %>
+    </div>
+  <% end %>
+</div>
