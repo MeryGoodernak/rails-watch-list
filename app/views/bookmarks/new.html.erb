@@ -1,0 +1,5 @@
+<div class="container">
+  <h1>Add a new movie to <%= @list.name %></h1>
+  <%= render 'form', list:@list, bookmark: @bookmark %>
+  <%= link_to "Back to #{@list.name}", list_path(@list) %>
+</div>

@@ -1,3 +1,9 @@
 <div class="container">
   <%= @list.name %>
+  <div class="btn btn-success">
+    <%= link_to 'Back to lists', root_path %>
+  </div>
+  <div class="btn btn-success">
+    <%= link_to 'Add a Movie', new_list_bookmark_path(@list) %>
+  </div>
 </div>
